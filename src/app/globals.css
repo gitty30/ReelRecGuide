@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #231d4b00;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 18px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+  ::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0);
+  }
+  html {
+    font-family: var(--font-poppins);
+  }
+}
+@layer components{
+  :root {
+    --container-maxWidth: 1280px;
+    --account-center-z-index: -1;
+    --account-center-position-top: -100px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: var(--container-maxWidth) !important;
+    @apply mx-auto px-6;
+  }
+  
+}
